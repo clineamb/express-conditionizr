@@ -1,6 +1,6 @@
 {
   "name": "express-conditionizr",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "Express middleware for server-side device / OS / browser detection based off of conditionizr: http://conditionizr.com",
   "main": "index.js",
   "directories": {
