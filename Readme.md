@@ -25,7 +25,7 @@ This middleware was made with Express 4 in mind, but has the same `function(req,
 
 ```js
 var express         = require('express')
-,   conditionizr    = require('../index.js')
+,   conditionizr    = require('conditionizr')
 ,   app             = express()
 ;
 
@@ -44,6 +44,7 @@ app.get("/", function(req, res) {
 
 ```js
 var express         = require('express')
+,   conditionizr    = require('conditionizr')
 ,   router          = express.Router()
 ;
 
@@ -62,6 +63,8 @@ router.get("/example", function(req, res) {
 ... or add it on just a route ...
 
 ```js
+// setup like before
+
 router.route("/example2")
     .all(conditionizr)
     .get(function(req, res) {
