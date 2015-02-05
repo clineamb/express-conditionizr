@@ -8,9 +8,12 @@ looking at your page.  Based on and inspired by <a href="http://conditionizr.com
 **express-conditionizr** is based on <a href="http://conditionizr.com/" target="_blank">Conditionizr</a>, a project that digested user agents on the client-side.  Express has had some stale device detection middlewares, and I prefer the methodology of coniditionizr, that I made this "port" of parts of the library from client side to server side.
 
 
-## Download
+## Install / Download
 
-`npm install express-conditionizr`
+`npm install express-conditionizr` or
+
+`git clone git@github.com:clineamb/express-conditionizr.git`
+
 
 ## Using
 
@@ -95,7 +98,6 @@ Two new variables appear in the `req` and `res` hashes: `req.detects` and `res.l
     "winPhone75": false,
     "winPhone8": false,
     "localhost": true,
-    // ^ ran a server locally; this is taken from req.headers['host']
     "touch": false,
     "tablet": false,
     "phone": false,
@@ -103,6 +105,9 @@ Two new variables appear in the `req` and `res` hashes: `req.detects` and `res.l
     "desktop": true
 }
 ```
+
+**Note:** Localhost is found using the `req.headers['host']` from `req.headers`.  This is the only test that uses this.
+
 
 ## Tests
 
