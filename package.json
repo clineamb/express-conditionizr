@@ -1,0 +1,38 @@
+{
+  "name": "express-conditionizr",
+  "version": "0.9.0",
+  "description": "Express middleware for server-side device / OS / browser detection based off of conditionizr: http://conditionizr.com",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "dependencies": {
+    "express": "^4.11.2",
+    "underscore": "^1.7.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "jshint-stylish": "^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:clineamb/express-conditionizr.git"
+  },
+  "keywords": [
+    "conditionizr",
+    "node",
+    "express",
+    "nodejs",
+    "user",
+    "agent",
+    "useragent",
+    "detection",
+    "middleware"
+  ],
+  "author": "Caroline Amaba <her@carolineamaba.com> (http://carolineamaba.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clineamb/express-conditionizr/issues"
+  },
+  "homepage": "https://github.com/clineamb/express-conditionizr"
+}
