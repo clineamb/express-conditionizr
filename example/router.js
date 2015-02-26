@@ -1,7 +1,6 @@
 var express         = require('express')
 ,   router          = express.Router()
-,   conditionizr    = require('../index.js')
-// ,   conditionizr    = require('express-conditionizr')
+,   conditionizr    = require('express-conditionizr')
 ,   detective       = conditionizr.detective
 ;
 
