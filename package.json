@@ -6,12 +6,16 @@
   "directories": {
     "example": "example"
   },
+  "scripts": {
+    "test": "gulp test"
+  },
   "dependencies": {
     "express": "^4.11.2",
     "underscore": "^1.7.0"
   },
   "devDependencies": {
     "gulp": "^3.8.10",
+    "gulp-mocha": "^2.0.0",
     "jshint-stylish": "^1.0.0"
   },
   "repository": {

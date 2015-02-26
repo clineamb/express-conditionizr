@@ -13,3 +13,12 @@ gulp.task('jshint', function() {
         .pipe(jshint.reporter('jshint-stylish'))
     ;
 });
+
+
+gulp.task('test', function() {
+    return gulp.src('tests/*.spec.js', {read:false})
+        .pipe(mocha({
+            reporter: 'nyan'
+        }))
+    ;
+});
