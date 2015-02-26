@@ -1,5 +1,6 @@
 var gulp    = require('gulp')
 ,   jshint  = require('gulp-jshint')
+,   mocha   = require('gulp-mocha')
 ;
 
 
@@ -18,7 +19,8 @@ gulp.task('jshint', function() {
 gulp.task('test', function() {
     return gulp.src('tests/*.spec.js', {read:false})
         .pipe(mocha({
-            reporter: 'nyan'
+            reporter: 'nyan',
+            verbose: true
         }))
     ;
 });
