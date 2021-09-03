@@ -1,3 +1,5 @@
+# ⚠️⚠️ This repo is no longer actively matinained. ⚠️⚠️
+
 # express-conditionizr
 
 A server-side collection of User Agent detects to let you know what's
